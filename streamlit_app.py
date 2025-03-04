@@ -88,6 +88,19 @@ def make_predictions(X):
 
 # Streamlit UI
 st.title("🔧 Tool Wear Prediction App")
+st.markdown(
+    """
+    ## 📌 Overview
+    This project focuses on analyzing **CNC milling machine performance** and detecting faults using **deep learning techniques**. 
+    The primary objective is to predict:
+    - 🛠 **Tool Condition** (Unworn/Worn)
+    - ⚙️ **Machining Finalization** (Yes/No)
+    - 🔍 **Passed Visual Inspection** (Yes/No)
+    
+    Using **LSTM-based deep learning models**, the project processes **sensor data** collected from CNC milling experiments. 
+    The web app is built with **Streamlit** for an interactive experience.
+    """
+)
 st.write("Upload your CSV file to predict tool wear conditions.")
 
 uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
